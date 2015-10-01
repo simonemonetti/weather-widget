@@ -1,0 +1,49 @@
+@font-face {
+      font-family: 'weather';
+      src: url('../font/weather.eot?97705584');
+      src: url('../font/weather.eot?97705584#iefix') format('embedded-opentype'),
+           url('../font/weather.woff?97705584') format('woff'),
+           url('../font/weather.ttf?97705584') format('truetype'),
+           url('../font/weather.svg?97705584#weather') format('svg');
+      font-weight: normal;
+      font-style: normal;
+} 
+     
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+      font-family: "weather";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cloud-sun:before { content: '\e800'; } /* '' */
+.icon-wind:before { content: '\e801'; } /* '' */
+.icon-sun:before { content: '\e802'; } /* '' */

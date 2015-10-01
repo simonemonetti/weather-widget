@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Weather widget</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section id="weather-widget">
+		<div class="card">
+
+			<div class="front">
+				<div class="primary">
+					<img class="flip" src="images/icons/flip.png" />
+					<img class="weather-icon" src="images/icons/cloudy.png" />
+					<div class="details">
+						<div class="temperature"><span class="degrees">79</span>°</div>
+						<div class="info">
+							<span class="description">Cloudy Skies</span>
+							<span class="location">Milan, Italy</span>
+						</div>
+					</div>
+					<div class="date">
+						<span class="month">Sep</span>
+						<span class="day">25</span>
+					</div>
+				</div>
+				<div class="secondary">
+					<div class="wind">
+						<img src="images/icons/wind.png" />
+						<span class="field"></span>
+						<span> MPH</span>
+					</div>
+					<div class="humidity">
+						<img src="images/icons/humidity.png" />
+						<span class="field"></span><span>%</span>
+					</div>
+					<div class="sun">
+						<img src="images/icons/sun.png" />
+						<span class="field">83</span><span>%</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="back">
+				<div id="map-overlay"></div>
+				<div id="map"></div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="js/min/events.min.js"></script>
+	<script src="js/min/geolocation.min.js"></script>
+	<script src="js/min/weather.min.js"></script>
+	<script src="js/min/map.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+@mixin vertical-align {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+@mixin radius($top, $bottom) {
+	border-top-left-radius: $top;
+	border-top-right-radius: $top;
+	border-bottom-right-radius: $bottom;
+	border-bottom-left-radius: $bottom;
+}
